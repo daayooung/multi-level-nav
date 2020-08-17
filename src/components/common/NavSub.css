@@ -1,0 +1,28 @@
+.nav_depth2 {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  right: 0px;
+  width: 768px;
+  height: 65px;
+  background: rgb(96, 106, 6);
+}
+.depth1:hover .nav_depth2,
+.depth1 a.active ~ .nav_depth2 {
+  display: block;
+}
+
+.depth1 a:hover {
+  color: rgb(235, 233, 90);
+}
+
+.nav_depth2 li {
+  float: left;
+  padding: 0;
+}
+
+.nav_depth2 a {
+  padding: 20px;
+  float: left;
+}

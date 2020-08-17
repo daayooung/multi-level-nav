@@ -1,0 +1,14 @@
+.depth1 {
+  list-style: none;
+  float: left;
+  padding: 20px 68px;
+  cursor: pointer;
+}
+
+.depth1:hover {
+  color: rgb(235, 233, 90);
+}
+
+.depth1.active {
+  font-weight: bolder;
+}
