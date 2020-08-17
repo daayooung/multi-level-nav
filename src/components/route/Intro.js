@@ -2,17 +2,20 @@ import React, { memo } from 'react';
 import { Route } from 'react-router-dom';
 import Section from './Section';
 
-const Intro = ({ match, sitemap }) => {
-  const navInfo = sitemap.find((page) => page.path === match.path);
-  const description = navInfo.description;
+const Intro = ({ sitemap }) => {
   return (
-    <div>
-      <p>{description}</p>
-      <Route
-        path="/intro/:pagepath"
-        render={({ match }) => <Section sitemap={navInfo} match={match} />}
-      />
-    </div>
+    <>
+      {sitemap.map((sitemap) => (
+        <div key={sitemap.pagename}>
+          <p key={sitemap.description}>{sitemap.description}</p>
+          <Route
+            key={sitemap.path}
+            path="/intro/:pagepath"
+            render={({ match }) => <Section sitemap={sitemap} match={match} />}
+          />
+        </div>
+      ))}
+    </>
   );
 };
 

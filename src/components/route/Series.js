@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { Route } from 'react-router-dom';
 import Section from './Section';
 
-const Etc = ({ match, sitemap }) => {
+const Series = ({ match, sitemap }) => {
   const navInfo = sitemap.find((depth2) => depth2.path === match.path);
 
   return (
@@ -17,4 +17,4 @@ const Etc = ({ match, sitemap }) => {
   );
 };
 
-export default memo(Etc);
+export default memo(Series);

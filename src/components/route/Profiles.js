@@ -4,7 +4,7 @@ import Section from './Section';
 
 const Profiles = ({ match, sitemap }) => {
   const navInfo = sitemap.find((depth2) => depth2.path === match.path);
-
+  console.log(sitemap[2]);
   return (
     <div>
       <Route
