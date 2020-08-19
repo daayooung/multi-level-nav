@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { Route } from 'react-router-dom';
-import Section from './Section';
+import Section from '../common/Section';
 
 const Home = ({ sitemap }) => {
   return (

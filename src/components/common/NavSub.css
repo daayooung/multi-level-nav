@@ -6,7 +6,7 @@
   right: 0px;
   width: 768px;
   height: 65px;
-  background: rgb(96, 106, 6);
+  background: rgb(59, 57, 0);
 }
 .depth1:hover .nav_depth2,
 .depth1 a.active ~ .nav_depth2 {
